@@ -15,7 +15,7 @@
 6. Opening the black box of Deep Neural Networks via Information (Schwartz-Ziv 2017)
 7. Uncertainty in Deep Learning(Yarin Gal 2017)
 8. Distribution-Specific Hardness of Learning Neural Networks(Shamir 2017)
-9. Lssons from the Rademacher Complexity for Deep Learning(Sokolic 2016)
+9. Lessons from the Rademacher Complexity for Deep Learning(Sokolic 2016)
 10. Shannon Information and Kolmogorov Complexity (Grunwald 2010)
 11. A mathematical theory of Deep Convolutional Neural Networks for Feature Extraction(Wiatowski 2016)
 12. Spectral Representations for Convolutional Neural Networks(Rippl 2015)
