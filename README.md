@@ -1,5 +1,5 @@
 # foundations for deep learning:
-1. I emphasize mathematical/conceptual foundations because implementations of ideas(ex. Keras, Tensorflow)
+1. I emphasize mathematical/conceptual foundations because implementations of ideas(ex. Torch, Tensorflow)
    will keep evolving but the underlying backbone must be sound. Anybody with an interest in deep learning 
    can and should try to understand why things work. 
 2. I include neuroscience as a useful conceptual foundation for two reasons. First, it may provide inspiration
