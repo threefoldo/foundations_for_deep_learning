@@ -6,7 +6,7 @@
    for future models and algorithms. Second, the success of deep learning can contribute to useful hypotheses
    and models for computational neuroscience. 
 
-##Mathematical papers:
+## Mathematical papers:
 1. Why does unsupervised pre-training help deep learning?(Erhan et al. 2010)
 2. Learning Deep Generative Models(Salakhutdinov 2015)
 3. Dropout as a Bayesian Approximation(Yarin Gal 2016)
@@ -21,7 +21,7 @@
 12. Spectral Representations for Convolutional Neural Networks(Rippl 2015)
 13. Electron-Proton dynamics in deep learning(Zhang 2017)
 
-#Neuroscience papers:
+## Neuroscience papers:
 1. Towards an integration of deep learning and neuroscience(Marblestone 2016)
 2. Equilibrium Propagation(Scellier 2016)
 3. Biologically plausible deep learning(Bengio 2015)
@@ -29,4 +29,5 @@
 5. Deep learning with spiking neurons(Mesnard 2016)
 6. Towards deep learning with spiking dendrites(Guergiuev 2017)
 
+## Note: This is a work in progress. I have a lot more papers to add.
 
