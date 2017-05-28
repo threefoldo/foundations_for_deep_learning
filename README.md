@@ -29,5 +29,5 @@
 5. Deep learning with spiking neurons(Mesnard 2016)
 6. Towards deep learning with spiking dendrites(Guergiuev 2017)
 
-## Note: This is a work in progress. I have a lot more papers to add.
+### Note: This is a work in progress. I have a lot more papers to add.
 
