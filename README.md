@@ -20,6 +20,7 @@
 11. A mathematical theory of Deep Convolutional Neural Networks for Feature Extraction(Wiatowski 2016)
 12. Spectral Representations for Convolutional Neural Networks(Rippl 2015)
 13. Electron-Proton dynamics in deep learning(Zhang 2017)
+14. Discovering Neural Nets with Low Kolmogorov Complexity(Schmidhuber 1997)                                                     
 
 ## Neuroscience papers:
 1. Towards an integration of deep learning and neuroscience(Marblestone 2016)
@@ -28,6 +29,7 @@
 4. Random synaptic feedback weights(Lillicrap 2016)
 5. Deep learning with spiking neurons(Mesnard 2016)
 6. Towards deep learning with spiking dendrites(Guergiuev 2017)
+7. Variational learning for recurrent spiking networks(Rezende 2014)
 
 ### Note: This is a work in progress. I have a lot more papers to add.
 
