@@ -29,7 +29,7 @@
 4. Random synaptic feedback weights(Lillicrap 2016)
 5. Deep learning with spiking neurons(Mesnard 2016)
 6. Towards deep learning with spiking dendrites(Guergiuev 2017)
-7. Variational learning for recurrent spiking networks(Rezende 2014)
+7. Variational learning for recurrent spiking networks(Rezende 2011)
 
 ### Note: This is a work in progress. I have a lot more papers to add.
 
