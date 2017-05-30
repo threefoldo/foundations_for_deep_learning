@@ -18,6 +18,8 @@
 9. A mathematical theory of Deep Convolutional Neural Networks for Feature Extraction(Wiatowski 2016)
 10. Spectral Representations for Convolutional Neural Networks(Rippl 2015)
 11. Electron-Proton dynamics in deep learning(Zhang 2017)       
+12. Empirical Risk Minimization for Learning Theory(Vapnik 1991)
+13. Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift(Ioffe 2015)
 
 ## Information Theory papers:
 1. Shannon Information and Kolmogorov Complexity (Grunwald 2010)
@@ -32,6 +34,7 @@
 5. Deep learning with spiking neurons(Mesnard 2016)
 6. Towards deep learning with spiking dendrites(Guergiuev 2017)
 7. Variational learning for recurrent spiking networks(Rezende 2011)
+8. A view of Neural Networks as dynamical systems(Cessac 2009)
 
 ### Note: This is a work in progress. I have a lot more papers to add.
 
