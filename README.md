@@ -5,6 +5,9 @@
 2. I include neuroscience as a useful conceptual foundation for two reasons. First, it may provide inspiration
    for future models and algorithms. Second, the success of deep learning can contribute to useful hypotheses
    and models for computational neuroscience. 
+3. Information Theory is also a very useful foundation as there's a strong connection between data compression
+and statistical prediction. In fact, data compressors and machine learning models approximate Kolmogorov Complexity
+which is the ultimate data compressor. 
 
 ## Mathematical papers:
 1. Why does unsupervised pre-training help deep learning?(Erhan et al. 2010)

@@ -1,0 +1,152 @@
+   
+\documentclass[11pt]{article}
+\renewcommand{\baselinestretch}{1.05}
+\usepackage{amsmath,amsthm,verbatim,amssymb,amsfonts,amscd, graphicx}
+\usepackage{graphics}
+\topmargin0.0cm
+\headheight0.0cm
+\headsep0.0cm
+\oddsidemargin0.0cm
+\textheight23.0cm
+\textwidth16.5cm
+\footskip1.0cm
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}
+\newtheorem{corollary}{Corollary}
+\newtheorem{lemma}{Lemma}
+\newtheorem{proposition}{Proposition}
+\newtheorem*{surfacecor}{Corollary 1}
+\newtheorem{conjecture}{Conjecture} 
+\newtheorem{question}{Question} 
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}
+
+ \begin{document}
+
+\title{ELU  $\gg$ ReLU}
+
+\author{Aidan Rocke}
+\maketitle
+
+ \begin{abstract}
+  While the choice of activation function in the hidden layers of a feedforward neural network is 
+  essential for controlling the rate and stability of learning, a principled understanding of the
+  relative strengths and weaknesses of different activation functions appears to be lacking.
+\end{abstract}
+
+\section{Introduction}
+
+\subsection{Why are activation functions important?}
+
+The choice of activation function in the hidden layers has a profound impact on every aspect of 
+neural network training. In particular, I would emphasise the following:
+
+\begin{enumerate}
+
+\item{Rate of learning: 
+
+Ideally, learning would be fast and computationally efficient. }
+
+\item{Stability: 
+
+We want all components to learn at similar rates and we want the 
+derivative of the activation function $\sigma$ to be Lipschitz-stable to input perturbations $\alpha \in \mathbb{R}$:
+
+
+\begin{equation}
+\exists \lambda \in \mathbb{R}_{+}  \forall \alpha \in \mathbb{R}, \lVert \dot{\sigma}(x+\alpha)-\dot{\sigma}(x) \rVert \leq \lambda \alpha
+\end{equation}
+
+
+}
+
+\item{Internal covariate shift:
+
+Small changes to the inputs of a neural networks hidden layers get amplified
+as we go deeper into the network. This leads to internal covariate set shift within
+the neural network and slows down the process of learning an approximation 
+to the joint distribution $P(X,Y)$ [4]. 
+}
+
+\end{enumerate}
+
+\subsection{neural networks are complex systems:}
+
+Given their complex training behaviour, training neural networks is highly non-trivial as they are complex systems:
+
+\begin{enumerate}
+
+\item Hierarchical organisation: Higher-order features in the hidden layers are derived from zero-order features(i.e. input data) in a compositional manner. 
+
+\item Highly non-linear: The aggregate behaviour of a deep neural network is highly non-linear and can't be derived from the activity of individual components. 
+
+\end{enumerate}
+
+Now, given that activation functions $\sigma_i$ are fixed during training and these must satisfy the constraints mentioned in the previous
+section it makes sense that these must be carefully chosen. For a quick review of feedforward neural networks I would refer the reader 
+to the Appendix. 
+
+
+\section{Appendix:}
+
+\subsection{feedforward neural networks:}
+
+In general, a feedforward neural network $f$ is a non-linear function consisting of affine transformations($W_i$)
+interleaved with differentiable activation functions($\sigma_i$):
+
+\begin{equation}
+\begin{gathered}
+f: \widetilde{X} \rightarrow Y \\
+f(x) = \sigma_n W_n ... \sigma_2 W_2 \sigma_1 W_1 x  
+\end{gathered}
+\end{equation}
+
+It's useful to note that $f$ represents the composition of differentiable functions so it's also fully differentiable. 
+
+
+\subsection{function approximation: }
+
+The task of training a feedforward neural network is essentially to obtain successively better approximations
+$f_i$ to a desired but unknown mapping $g$:
+
+\begin{equation}
+g: X \rightarrow Y
+\end{equation}
+
+where $ \widetilde{X} \subset X$. \\
+
+Given a training set $ D_{train} = (X_{train},Y_{train}) = (x_j,y_j)_{j=1}^n$, this is done via a sequence of applications of the mini-batch back-propagation
+algorithm which uses a gradient-based optimiser to simultaneously update all the matrices $W_i$ while leaving the $\sigma_i$ fixed[1]. This essentially 
+means that the desired output of $N$ passes of mini-batch backprop is to obtain $(f_i)_{i=1}^N$ such that:
+
+\begin{equation}
+\lVert f_N -g \rVert = \displaystyle{\min_{i} {\lVert f_i -g \rVert } }
+\end{equation}
+
+where $\lVert \cdot \rVert$ is an appropriately chosen metric on a function space $G$ including all parametric approximations of $g$. \\
+
+Now, given that $g$ is unknown it follows that the best we can do is to find $f_j \in (f_i)_{i=1}^N$ that minimises the empirical risk $\tilde{R}$ on the validation
+set $D_{validate} = (x_j,y_j)_{j=1}^m$:
+
+\begin{equation}
+\tilde{R}(f_j) = \frac{1}{m} \sum_{i=1}^{m} L(f_j(x_i),y_i)
+\end{equation}
+
+where $L$ is a suitably chosen loss function. \\
+
+
+\section{References:}
+
+\begin{enumerate}
+\item{J.G Makin. Backpropagation. 2006.}
+\item{V. Vapnik Empirical Risk Minimization for Learning Theory. 1991.}
+\item{X. Glorot \& Y. Bengio. Understanding the difficulty of training deep feedforward neural networks. 2010.}
+\item{S. Ioffe \& C. Szegedy. Batch Normalisation: Accelerating Deep Network Training by Reducing Internal Covariate Shift. 2015.} 
+\item{D. Clevert, T. Unterthiner \& S. Hochreiter. Fast and Accurate Deep Network Learning by Exponential Linear Units. 2016.}
+
+\end{enumerate}
+
+
+ 
+ 
+\end{document}
