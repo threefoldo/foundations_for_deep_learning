@@ -9,20 +9,30 @@
 and statistical prediction. In fact, data compressors and machine learning models approximate Kolmogorov Complexity
 which is the ultimate data compressor. 
 
+## Classics:
+1. Learning Deep Generative Models(Salakhutdinov 2015)
+2. Uncertainty in Deep Learning(Yarin Gal 2017)
+3. Markov Chain Monte Carlo and Variational Inference: Bridging the Gap (Salimans 2014)
+4. Weight Normalization (Salimans 2016)
+5. Mixture Density Networks (Bishop 1994)
+6. Dropout as a Bayesian Approximation(Yarin Gal 2016)
+7. Learning Deep Generative Models(Salakhutdinov 2015)
+8. Why does unsupervised pre-training help deep learning?(Erhan et al. 2010)
+9. Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift(Ioffe 2015)
+
 ## Mathematical papers:
-1. Why does unsupervised pre-training help deep learning?(Erhan et al. 2010)
-2. Learning Deep Generative Models(Salakhutdinov 2015)
-3. Dropout as a Bayesian Approximation(Yarin Gal 2016)
-4. Dropout Rademacher Complexity of Deep Neural Networks(Wei Gao 2014)
-5. Markov Chain Monte Carlo and Variational Inference: Bridging the Gap (Salimans 2014)
-6. Uncertainty in Deep Learning(Yarin Gal 2017)
-7. Distribution-Specific Hardness of Learning Neural Networks(Shamir 2017)
-8. Lessons from the Rademacher Complexity for Deep Learning(Sokolic 2016) 
-9. A mathematical theory of Deep Convolutional Neural Networks for Feature Extraction(Wiatowski 2016)
-10. Spectral Representations for Convolutional Neural Networks(Rippl 2015)
-11. Electron-Proton dynamics in deep learning(Zhang 2017)       
-12. Empirical Risk Minimization for Learning Theory(Vapnik 1991)
-13. Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift(Ioffe 2015)
+1. Dropout Rademacher Complexity of Deep Neural Networks(Wei Gao 2014)
+2. Distribution-Specific Hardness of Learning Neural Networks(Shamir 2017)
+3. Lessons from the Rademacher Complexity for Deep Learning(Sokolic 2016) 
+4. A mathematical theory of Deep Convolutional Neural Networks for Feature Extraction(Wiatowski 2016)
+5. Spectral Representations for Convolutional Neural Networks(Rippl 2015)
+6. Electron-Proton dynamics in deep learning(Zhang 2017)       
+7. Empirical Risk Minimization for Learning Theory(Vapnik 1991)
+8. The Loss Surfaces of Multilayer Networks(Y LeCun et al. 2015)
+9. Understanding Synthetic Gradients and Decoupled Neural Interfaces(W. Czarnecki 2017)
+10. Dataset Shift(Storkey 2013)
+11. Risk vs Uncertainty(I. Osband 2016)
+12. The loss surface of deep and wide neural networks(Q. Nguyen 2017)
 
 ## Information Theory papers:
 1. Shannon Information and Kolmogorov Complexity (Grunwald 2010)
